@@ -1,16 +1,38 @@
 package revelChapterTwo;
 
+import java.util.Scanner;
+
 public class Section02_09 {
 
 	public static void main(String[] args) {
-		/* Average acceleration is defined as the change of velocity
-		 * divided by the time taken to make the change, like the formula
+		/* Program gets starting velocity, ending velocity, and time (all in seconds)
+		 * Computes average acceleration
 		 * a = v1 - v0 / t
-		 * Write a program that prompts the user to enter the starting
-		 * velocity v0 in meters/second, the ending velocity v1 in
-		 * meters/second, and the time span t in seconds, and display
-		 * the average acceleration
+		 * Starting velocity = v0 in meters/second
+		 * Ending velocity = v1 in meters/second
+		 * Time span = t in seconds
 		 */
+
+		 // Start Scanner to get user input
+		 Scanner input = new Scanner(System.in);
+
+		 // get starting velocity from user
+		 System.out.print("Enter a value for the starting velocity in meters per second: ");
+		 double startingVelocity = input.nextDouble();
+
+		 // get ending velocity from user
+		 System.out.print("Enter a value for the ending velocity in meters per second: ");
+		 double endingVelocity = input.nextDouble();
+
+		 // get time span from user
+		 System.out.print("Enter a time span in seconds: ");
+		 double time = input.nextDouble();
+
+		 // computer average acceleration
+		 double avgAcceleration = ( endingVelocity - startingVelocity ) / time;
+
+		 // display result
+		 System.out.println("Average acceleration is: " + avgAcceleration + " seconds.");
 
 	}
 
