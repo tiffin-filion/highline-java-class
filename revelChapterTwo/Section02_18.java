@@ -13,6 +13,24 @@ public class Section02_18 {
 		 * 5	6	15625
 		 */
 
+		 // print table
+		 System.out.println("a\t" + "b\t" + "pow(a, b)");
+		 int a = 1;
+		 int b = 2;
+		 System.out.println(a + "\t" + b + "\t" + (int)Math.pow(a,b));
+		 ++a;
+		 ++b;
+		 System.out.println(a + "\t" + b + "\t" + (int)Math.pow(a,b));
+		 ++a;
+		 ++b;
+		 System.out.println(a + "\t" + b + "\t" + (int)Math.pow(a,b));
+		 ++a;
+		 ++b;
+		 System.out.println(a + "\t" + b + "\t" + (int)Math.pow(a,b));
+		 ++a;
+		 ++b;
+		 System.out.println(a + "\t" + b + "\t" + (int)Math.pow(a,b));
+
 	}
 
 }

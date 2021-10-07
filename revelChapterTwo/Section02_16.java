@@ -1,14 +1,26 @@
 package revelChapterTwo;
 
+import java.util.Scanner;
+
 public class Section02_16 {
 
 	public static void main(String[] args) {
-		/* Write a program that prompts the user to enter the
-		 * side of a hexagon and displays its area. The formula
-		 * for computing the area of a hexagon is
-		 * area = (3 sqrt 3 / 2) * 8 squared
-		 * where s is the length of a side.
+		/* Program takes length of one side of hexagon and computes it's area
+		 * Area = ((3 * sqrt of 3) / 2) * side squared
 		 */
+
+		 // Add Scanner so user can provide input
+		 Scanner input = new Scanner(System.in);
+
+		 // Get user to enter hexagon side length
+		 System.out.print("Enter the length of one side of the hexagon: ");
+		 double side = input.nextDouble();
+
+		 // Compute area of hexagon
+		 double area = ((3 * (Math.sqrt(3))) / 2) * (side * side);
+
+		 // Display result
+		 System.out.println("The area of the hexagon is: " + area);
 
 	}
 
