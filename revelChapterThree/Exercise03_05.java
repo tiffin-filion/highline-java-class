@@ -16,7 +16,43 @@ public class Exercise03_05 {
      * 0 - Sunday, 1 - Monday, etc.
      */
     
+    System.out.print("Enter a day of the week as a number (0 - Sunday, 1 Monday, etc.): ");
+    int currentDayOfWeek = input.nextInt();
+    
+    
     // get user to enter number of days from today
+    
+    System.out.print("Enter number of days from today: ");
+    int daysFromToday = input.nextInt();
+    
+    System.out.print("Today is ");
+    
+    switch(currentDayOfWeek) {
+      case 0: System.out.print("Sunday"); break;
+      case 1: System.out.print("Monday"); break;
+      case 2: System.out.print("Tuesday"); break;
+      case 3: System.out.print("Wednesday"); break;
+      case 4: System.out.print("Thursday"); break;
+      case 5: System.out.print("Friday"); break;
+      case 6: System.out.print("Saturday"); break;
+    }
+    
+    System.out.print(" and the future day is ");
+    
+    int futureDay = (currentDayOfWeek + daysFromToday);
+    if (futureDay > 7) {
+      futureDay -= 7;
+    }
+    
+    switch(futureDay) {
+      case 0: System.out.print("Sunday"); break;
+      case 1: System.out.print("Monday"); break;
+      case 2: System.out.print("Tuesday"); break;
+      case 3: System.out.print("Wednesday"); break;
+      case 4: System.out.print("Thursday"); break;
+      case 5: System.out.print("Friday"); break;
+      case 6: System.out.print("Saturday"); break;
+    }
 
   }
 
