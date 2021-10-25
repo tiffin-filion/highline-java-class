@@ -7,7 +7,7 @@ public class twoConsecutive {
   public static void main(String[] args) {
     /* Static method named twoConsecutive that accepts three integers as parameters
      * Returns true if there is at least one pair of integers that differ by exactly 1
-     * Example: integers 3 and 4 diffre by 1
+     * Example: integers 3 and 4 differ by 1
      * Method should return false if there are no such consecutive values
      * Integers could be passed in any order.
      */
@@ -30,5 +30,4 @@ public class twoConsecutive {
     }
 
   }
-
 }
