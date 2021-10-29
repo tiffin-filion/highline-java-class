@@ -25,8 +25,11 @@ public class Exercise03_03 {
     double e = input.nextDouble();
     double f = input.nextDouble();
     
+    double x = (e * d - b * f) / (a * d - b * c);
+    double y = (a * f - e * c) / (a * d - b * c);
+    
     // "x is ... and y is ..."
-
+    System.out.println("X is " + x + " and Y is " + y);
   }
 
 }

@@ -1,0 +1,119 @@
+Programming Exercises From The Book
+These programming exercises are optional and do not report to the performance dashboard. Instructors can decide whether to assign these exercises in the course. Students can check the correctness of their programs using the Exercise Check Tool.
+
+Section 4.2
+4.1 (Geometry: area of a pentagon) Write a program that prompts the user to enter the length from the center of a pentagon to a vertex and computes the area of the pentagon, as shown in the following figure.
+
+
+The formula for computing the area of a pentagon is Area=5×s24×tan(π5), where s is the length of a side. The side can be computed using the formula s = 2rsin π5 , where r is the length from the center of a pentagon to a vertex. Round up two digits after the decimal point. Here is a sample run:
+
+
+*4.2 (Geometry: great circle distance) The great circle distance is the distance between two points on the surface of a sphere. Let (x1, y1) and (x2, y2) be the geographical latitude and longitude of two points. The great circle distance between the two points can be computed using the following formula:
+d = radius × arccos(sin(x1) × sin(x2) + cos(x1) × cos(x2) × cos(y1 − y2))
+
+Write a program that prompts the user to enter the latitude and longitude of two points on the earth in degrees and displays its great circle distance. The average earth radius is 6,371.01 km. Note that you need to convert the degrees into radians using the Math.toRadians method since the Java trigonometric methods use radians. The latitude and longitude degrees in the formula are for north and west. Use negative to indicate south and east degrees. Here is a sample run:
+
+
+VideoNote: Compute Great Circle Distance
+
+*4.3 (Geography: estimate areas) Use the GPS locations for Atlanta, Georgia; Orlando, Florida; Savannah, Georgia; and Charlotte, North Carolina in the figure in Section 4.1 to compute the estimated area enclosed by these four cities. (Hint: Use the formula in Programming Exercise 4.2 to compute the distance between two cities. Divide the polygon into two triangles and use the formula in Programming Exercise 2.19 to compute the area of a triangle.)
+
+4.4 (Geometry: area of a hexagon) The area of a hexagon can be computed using the following formula (s is the length of a side):
+
+Area=6×s24×tan(π6)
+Write a program that prompts the user to enter the side of a hexagon and displays its area. Here is a sample run:
+
+
+*4.5 (Geometry: area of a regular polygon) A regular polygon is an n-sided polygon in which all sides are of the same length and all angles have the same degree (i.e., the polygon is both equilateral and equiangular). The formula for computing the area of a regular polygon is
+
+Area=n×s24×tan(πn)
+Here, s is the length of a side. Write a program that prompts the user to enter the number of sides and their length of a regular polygon and displays its area. Here is a sample run:
+
+
+*4.6 (Random points on a circle) Write a program that generates three random points on a circle centered at (0, 0) with radius 40 and display three angles in a triangle formed by these three points, as shown in Figure 4.7a. (Hint: Generate a random angle α in radians between 0 and 2π as shown in Figure 4.7b and the point determined by this angle is (r∗cos(α), r∗sin(α)).)
+
+
+Figure 4.7 (a) A triangle is formed from three random points on the circle. (b) A random point on the circle can be generated using a random angle α (c) A pentagon is centered at (0, 0) with one point at the 0 o’clock position.
+*4.7 (Corner point coordinates) Suppose a pentagon is centered at (0, 0) with one point at the 0 o’clock position, as shown in Figure 4.7c. Write a program that prompts the user to enter the radius of the bounding circle of a pentagon and displays the coordinates of the five corner points on the pentagon from p1 to p5 in this order. Use console format to display two digits after the decimal point. Here is a sample run:
+
+
+Sections 4.3–4.6
+*4.8 (Find the character of an ASCII code) Write a program that receives an ASCII code (an integer between 0 and 127) and displays its character. Here is a sample run:
+
+
+*4.9 (Find the Unicode of a character) Write a program that receives a character and displays its Unicode. Here is a sample run:
+
+
+*4.10 (Guess birthday) Rewrite Listing 4.3 GuessBirthday.java to prompt the user to enter the character Y for Yes and N for No rather than entering 1 for Yes and 0 for No.
+
+*4.11 (Decimal to hex) Write a program that prompts the user to enter an integer between 0 and 15 and displays its corresponding hex number. For an incorrect input number, display invalid input. Here is a sample run:
+
+
+4.12 (Hex to binary) Write a program that prompts the user to enter a hex digit and displays its corresponding binary number. For an incorrect input, display invalid input. Here is a sample run:
+
+VideoNote: Convert Hex to Binary
+
+*4.13 (Vowel or consonant?) Write a program that prompts the user to enter a letter and check whether the letter is a vowel or consonant. For a non-letter input, display invalid input. Here is a sample run:
+
+
+*4.14 (Convert letter grade to number) Write a program that prompts the user to enter a letter grade A, B, C, D, or F and displays its corresponding numeric value 4, 3, 2, 1, or 0. For other input, display invalid grade. Here is a sample run:
+
+
+*4.15 (Phone key pads) The international standard letter/number mapping found on the telephone is shown below:
+
+
+Write a program that prompts the user to enter a letter and displays its corresponding number. For a non-letter input, display invalid input.
+
+
+4.16 (Random character) Write a program that displays a random uppercase letter using the Math.random() method.
+
+*4.17 (Days of a month) Write a program that prompts the user to enter a year and the first three letters of a month name (with the first letter in uppercase) and displays the number of days in the month. If the input for month is incorrect, display a message as shown in the following sample run:
+
+
+*4.18 (Student major and status) Write a program that prompts the user to enter two characters and displays the major and status represented in the characters. The first character indicates the major and the second is number character 1, 2, 3, 4, which indicates whether a student is a freshman, sophomore, junior, or senior. Suppose the following characters are used to denote the majors:
+
+M: Mathematics
+
+C: Computer Science
+
+I: Information Technology
+
+Here is a sample run:
+
+
+4.19 (Business: check ISBN-10) Rewrite the Programming Exercise 3.9 by entering the ISBN number as a string.
+
+4.20 (Process a string) Write a program that prompts the user to enter a string and displays its length and its first character.
+
+
+*4.21 (Check SSN) Write a program that prompts the user to enter a Social Security number in the format DDD-DD-DDDD, where D is a digit. Your program should check whether the input is valid. Here is a sample run:
+
+
+4.22 (Check substring) Write a program that prompts the user to enter two strings and reports whether the second string is a substring of the first string.
+
+
+*4.23 (Financial application: payroll) Write a program that reads the following information and prints a payroll statement:
+
+Employee’s name (e.g., Smith)
+
+Number of hours worked in a week (e.g., 10)
+
+Hourly pay rate (e.g., 9.75)
+
+Federal tax withholding rate (e.g., 20%)
+
+State tax withholding rate (e.g., 9%)
+
+A sample run is shown below:
+
+
+*4.24 (Order three cities) Write a program that prompts the user to enter three cities and displays them in ascending order. Here is a sample run:
+
+
+*4.25 (Generate vehicle plate numbers) Assume a vehicle plate number consists of three uppercase letters followed by four digits. Write a program to generate a plate number. Here is a sample run:
+
+
+*4.26 (Financial application: monetary units) Rewrite Listing 2.10 ComputeChange.java to fix the possible loss of accuracy when converting a float value to an int value. Read the input as a string such as "11.56". Your program should extract the dollar amount before the decimal point and the cents after the decimal amount using the indexOf and substring methods.
+
+Note
+More than 200 additional programming exercises with solutions are provided to the instructors on the Instructor Resource Website.

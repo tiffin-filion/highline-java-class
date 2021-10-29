@@ -40,13 +40,52 @@ public class Exercise03_07 {
     int numberOfPennies = remainingAmount;
     
     // Display results
-    System.out.println("Your amount " + amount + " consists of");
-    System.out.println("\t" + numberOfOneDollars + " dollars");
-    System.out.println("\t" + numberOfQuarters + " quarters");
-    System.out.println("\t" + numberOfDimes + " dimes");
-    System.out.println("\t" + numberOfNickels + " nickels");
-    System.out.println("\t" + numberOfPennies + " pennies");
-
+    System.out.println("Your amount $" + amount + " consists of:");
+    
+    if (numberOfOneDollars > 0) {
+      if (numberOfOneDollars == 1) {
+        System.out.println(numberOfOneDollars + "\tdollar");
+      }
+      else {
+        System.out.println(numberOfOneDollars + "\tdollars");
+      }
+    }
+    
+    if (numberOfQuarters > 0) {
+      if (numberOfQuarters == 1) {
+        System.out.println(numberOfQuarters + "\tquarter");
+      }
+      else {
+        System.out.println(numberOfQuarters + "\tquarters");
+      }
+    }
+    
+    if (numberOfDimes > 0) {
+      if (numberOfDimes == 1) {
+        System.out.println(numberOfDimes + "\tdime");
+      }
+      else {
+        System.out.println(numberOfDimes + "\tdimes");
+      }
+    }
+    
+    if (numberOfNickels > 0) {
+      if (numberOfNickels == 1) {
+        System.out.println(numberOfNickels + "\tnickel");
+      }
+      else {
+        System.out.println(numberOfNickels + "\tnickels");
+      }
+    }
+    
+    if (numberOfPennies > 0) {
+      if (numberOfPennies == 1) {
+        System.out.println(numberOfPennies + "\tpenny");
+      }
+      else {
+        System.out.println(numberOfPennies + "\tpennies");
+      }
+    }
   }
 
 }
