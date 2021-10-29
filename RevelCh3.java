@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class RevelCh3 {
 
   public static void main(String[] args) {
