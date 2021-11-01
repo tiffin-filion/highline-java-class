@@ -1,17 +1,19 @@
 package classwork;
 
+// just a place to help with Pearson Quizzes & Exercises
+
+import java.util.Scanner;
+
 public class Test {
 
   public static void main(String[] args) {
-    int k = 1;
-    int total = 1;
+    
+    Scanner input = new Scanner(System.in);
 
-    while (k < 50) {
-        total = k * k;
-        k++;
-        System.out.println("k is " + k + " | total is " + total);
-    }
-
+    System.out.print("Enter multiple lines of copy");
+    
+    while (input.hasNextLine() == true) {
+      System.out.print(input + " ");
+     }
   }
-
 }
