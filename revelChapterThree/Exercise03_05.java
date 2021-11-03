@@ -16,13 +16,13 @@ public class Exercise03_05 {
      * 0 - Sunday, 1 - Monday, etc.
      */
     
-    System.out.print("Enter a day of the week as a number (0 - Sunday, 1 Monday, etc.): ");
+    System.out.print("Enter today's day: ");
     int currentDayOfWeek = input.nextInt();
     
     
     // get user to enter number of days from today
     
-    System.out.print("Enter number of days from today: ");
+    System.out.print("Enter number of days elapsed since today: ");
     int daysFromToday = input.nextInt();
     
     System.out.print("Today is ");
@@ -41,7 +41,7 @@ public class Exercise03_05 {
     
     int futureDay = (currentDayOfWeek + daysFromToday);
     if (futureDay > 7) {
-      futureDay -= 7;
+      futureDay %= 7;
     }
     
     switch(futureDay) {

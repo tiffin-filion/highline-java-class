@@ -27,9 +27,14 @@ public class Exercise03_03 {
     
     double x = (e * d - b * f) / (a * d - b * c);
     double y = (a * f - e * c) / (a * d - b * c);
+    double denominator = (a * d - b * c);
     
     // "x is ... and y is ..."
-    System.out.println("X is " + x + " and Y is " + y);
+    if (denominator == 0) {
+      System.out.println("no solution");
+    }
+    else {
+      System.out.println("X is " + x + " and Y is " + y);
+    }
   }
-
 }
