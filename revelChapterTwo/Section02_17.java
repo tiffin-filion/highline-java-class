@@ -8,7 +8,7 @@ public class Section02_17 {
 		/* Program uses the current temperature and wind speed to determin the wind-chill
 		 * tWC = 35.74 + 0.6215ta - 35.75v0.16 + 0.4275tav0.16
 		 * where ta is the outside temperature measured in degrees
-		 * Fahrenheigt and v is the speed measured in miles per hour.
+		 * Fahrenheit and v is the speed measured in miles per hour.
 		 * tWC is the wind-chill temperature. The formula cannot be
 		 * used for wind speeds below 2 mph or temperatures below -58F
 		 * or above 41F
