@@ -6,6 +6,8 @@ public class Exercise05_01 {
 
   public static void main(String[] args) {
     // Count positive and negative numbers and compute the average of numbers
+    // Program ends with 0
+    // Display average as floating-point number
     
     // read in an unspecified number of integers
     Scanner input = new Scanner(System.in);
@@ -32,14 +34,14 @@ public class Exercise05_01 {
       }
 }
 
-    if (total > 0) {
-    System.out.println("The number of positives is " + positive);
-    System.out.println("The number of negatives is " + negative);
-    System.out.println("The total is " + (double)total);
-    System.out.println("The average is " + (total / count));
+    if (count == 0) {
+      System.out.println("No numbers are entered except 0");
     }
     else {
-      System.out.println("No numbers are entered except 0");
+      System.out.println("The number of positives is " + positive);
+      System.out.println("The number of negatives is " + negative);
+      System.out.println("The total is " + total);
+      System.out.println("The average is " + ((double)total / (double)count));
   }
 }
 }
