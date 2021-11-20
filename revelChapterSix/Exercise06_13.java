@@ -10,7 +10,6 @@ public class Exercise06_13 {
   
   public static void table() {
     // compute series: m(i) = 1/2 + 2/3 + ... + i/(i+1);
-    // display as a table: column i and column m(i)
     
     System.out.println("i m(i)");
     

@@ -1,5 +1,7 @@
 package revelChapterSeven;
 
+import java.util.*;
+
 public class Exercise07_19 {
 
   public static void main(String[] args) {
@@ -7,18 +9,36 @@ public class Exercise07_19 {
      * prompt user for a list of numbers and determine if sorted or not
      */
     
-    /* sample run - first number indicates number of elements in the list
-     * it's not part of the list
-     * Enter list: 8 10 1 5 16 61 9 11 1
-     * The list is not sorted
-     * 
-     * Enter list: 10 1 1 3 4 4 5 7 9 11 21
-     * The list is already sorted
-     */
+    Scanner input = new Scanner(System.in);
+    
+    System.out.print("Enter the size of the list: ");
+    int listSize = input.nextInt();
+    
+    System.out.print("Enter the contents of the list: ");
+    int[] list = new int[listSize];
+    for (int i = 0; i < listSize; i++) {
+      list[i] = input.nextInt();
+    }
+    
+    System.out.println("The list has " + listSize + " integers " + Arrays.toString(list));
+    if (isSorted(list)) {
+      System.out.println("The list is already sorted");
+    }
+    else {
+      System.out.println("The list is not sorted");
+    }
+    
 
   }
   
   public static boolean isSorted(int[] list) {
+    boolean result = true;
+    for (int i = 0; i < list.length - 1; i++) {
+      if (list[i] > list[i + 1]) {
+        result = false;
+      }
+    }
+    return result;
   }
 
 }

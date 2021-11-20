@@ -11,17 +11,6 @@ public class Exercise07_01 {
      * C = score >= best - 30
      * D = score >= best - 40
      * Grade is F otherwise
-     * prompt user to enter total number of students
-     * prompt user to enter all scores
-     * display grades
-     */
-    
-    /* Enter the number of students: 4
-     * Enter 4 scores: 40 55 70 58
-     * Student 0 score is 40 and grade is C
-     * Student 1 score is 55 and grade is B
-     * Student 2 score is 70 and grade is A
-     * Student 3 score is 58 and grade is B
      */
     
     Scanner input = new Scanner(System.in);

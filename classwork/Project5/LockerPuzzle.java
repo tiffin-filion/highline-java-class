@@ -3,14 +3,45 @@ package classwork.Project5;
 public class LockerPuzzle {
 
   public static void main(String[] args) {
-    /* School has 100 lockers and 100 students
-     * All lockers start closed
-     * Student 1 opens every locker starting at 1
-     * Student 2 changes every 2nd locker starting at 2
-     * etc. Student 100 changes the 100th locker
-     * Which lockers are open and closed?
-     */
 
+ // Create & initialize arrays for students and lockers
+    int[] students = new int[100];
+    boolean[] lockers = new boolean[100];
+    
+    // Populate student array with numbers from 1 - 100
+    for (int i = 0; i < students.length; i++) {
+      students[i] = i + 1;
+    }
+    
+    // Close all the lockers
+    for (int j = 0; j < lockers.length; j++) {
+      lockers[j] = false;
+    }
+    
+    // Each student will change the locker according to their number
+    for (int s : students) {
+      int i = 1;
+      while (i <= 100) {
+        if ((i * s - 1) <= 100) {
+          if (lockers[i * s - 1] == true) {
+            lockers[i * s - 1] = false;
+          }
+          else {
+            lockers[i * s - 1] = true;
+          }
+        }
+        i++;
+      }
+    }
+    
+    for (int i = 0; i < lockers.length; i++) {
+      if (lockers[i] == true) {
+        System.out.println("Locker " + (i + 1) + " is open");
+      }
+      else {
+        System.out.println("Locker " + (i + 1) + " is closed");
+      }
+    }
+    }
   }
 
-}

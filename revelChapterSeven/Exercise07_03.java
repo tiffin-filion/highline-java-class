@@ -1,24 +1,40 @@
 package revelChapterSeven;
 
+import java.util.*;
+
 public class Exercise07_03 {
 
   public static void main(String[] args) {
-    /* program reads integers between 1 and 100 and counts occurences of each
-     * assume input ends with 0
-     * numbers printed in increasing order
-     * numbers above 1 use times rather than time
-     */
+    // program reads integers between 1 and 100 and counts occurrences of each
+    Scanner in = new Scanner(System.in);
     
-    /* Enter the integers between 1 and 100: 2 5 6 5 4 3 23 43 2 0
-     * 2 occurs 2 times
-     * 3 occurs 1 time
-     * 4 occurs 1 time
-     * 5 occurs 2 times
-     * 6 occurs 1 time
-     * 23 occurs 1 time
-     * 43 occurs 1 time
-     */
-
+    int[] numbers = new int[100];
+    int input;
+    int count = 0;
+    
+    System.out.print("Enter integers between 1 and 100: ");
+    
+    do {
+      input = in.nextInt();
+      numbers[count] = input;
+      count++;
+    }
+    while (input != 0);
+    
+    countOccurence(numbers); 
   }
-
+  
+  public static void countOccurence(int[] numberList) {
+    for (int i = 1; i <= 100; i++) {
+      int count = 0;
+      for (int j = 0; j < numberList.length - 1; j++) {
+        if (numberList[j] == i) {
+          count++;
+        }
+      }
+      if (count != 0) {
+        System.out.printf("%d occurs %d %s%n", i, count, count > 1 ? "times" : "time");
+      }
+    }
+  }
 }
