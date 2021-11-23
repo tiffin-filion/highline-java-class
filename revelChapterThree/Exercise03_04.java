@@ -1,16 +1,11 @@
 package revelChapterThree;
 
-import java.util.Scanner;
-
 public class Exercise03_04 {
 
   public static void main(String[] args) {
     /* Program randomly generates an integer between 1 and 12
      * Displays the English month name for the number
      */
-    
-    // import Scanner for input
-    Scanner input = new Scanner(System.in);
     
     // randomly generate an integer between 1 and 12
     
