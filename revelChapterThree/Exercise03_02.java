@@ -23,5 +23,4 @@ public class Exercise03_02 {
     System.out.println(number1 + " + " + number2 + " + " + number3 + " = " + answer + " is " + (number1 + number2 + number3 == answer));
 
   }
-
 }
